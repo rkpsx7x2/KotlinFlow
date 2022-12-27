@@ -43,7 +43,7 @@ class FlowCountDownTimer(private val coroutineScope: CoroutineScope) {
     /**
      * Resumes the timer.
      * @param newInterval (Long) Changes the interval of time tick callback resuming from this point of time.
-     * @see <Caution> "newInterval" filed is for specific cases where you need to change the interval
+     * @see <Caution> "newInterval" filed is for specific cases where you need to change the interval of time tick callback
      * at some point of time, else don't pass any value.
      */
     fun resume(newInterval: Long?=null) {
@@ -89,8 +89,3 @@ class FlowCountDownTimer(private val coroutineScope: CoroutineScope) {
     fun getTotalSeconds() = this.mTotalSecs
 
 }
-
-//data class TimerState(
-//    var remainingSecs: Long? = null,
-//    var totalSecs: Long? = null
-//)
