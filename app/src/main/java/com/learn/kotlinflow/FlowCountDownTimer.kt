@@ -76,7 +76,7 @@ class FlowCountDownTimer(private val coroutineScope: CoroutineScope) {
         }
     }
 
-    fun reset() {
+    fun cancel() {
         job?.let {
             it.cancel()
             job = null
