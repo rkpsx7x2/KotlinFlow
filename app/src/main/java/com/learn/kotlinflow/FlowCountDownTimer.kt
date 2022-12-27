@@ -80,10 +80,10 @@ class FlowCountDownTimer(private val coroutineScope: CoroutineScope) {
         job?.let {
             it.cancel()
             job = null
-            mTotalSecs = 0
-            mRemainingSecs = 0
-            mInterval = 1000L
         }
+        mTotalSecs = 0
+        mRemainingSecs = 0
+        mInterval = 1000L
     }
 
     fun getTotalSeconds() = this.mTotalSecs
